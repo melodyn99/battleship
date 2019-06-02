@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Move.html">
+<link rel="next" href="Main.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Move" rel="Chapter" href="Move.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Authors" rel="Chapter" href="Authors.html"><title>State</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Move.html" title="Move">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Main.html" title="Main">Next</a>
+</div>
+<h1>Module <a href="type_State.html">State</a></h1>
+
+<pre><span id="MODULEState"><span class="keyword">module</span> State</span>: <code class="code">sig</code> <a href="State.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">position</code> represents a location on the grid.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEposition"><span class="keyword">type</span> <code class="type"></code>position</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTposition.row">row</span>&nbsp;: <code class="type">char</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTposition.col">col</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><code><span id="TYPEboard"><span class="keyword">type</span> <code class="type"></code>board</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTboard.ships_pos">ships_pos</span>&nbsp;: <code class="type">(string * <a href="State.html#TYPEposition">position</a> list) list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTboard.hits">hits</span>&nbsp;: <code class="type">(string * <a href="State.html#TYPEposition">position</a> list) list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTboard.misses">misses</span>&nbsp;: <code class="type"><a href="State.html#TYPEposition">position</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTboard.num_hits">num_hits</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTboard.sunken">sunken</span>&nbsp;: <code class="type">(string * int) list</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">board</code> represents the entire grid. It contains all the ship positions, the
+    hits, misses, number of hits, and the list of ships that have not been
+    sunken.</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.player">player</span>&nbsp;: <code class="type"><a href="State.html#TYPEboard">board</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.enemy">enemy</span>&nbsp;: <code class="type"><a href="State.html#TYPEboard">board</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.avail">avail</span>&nbsp;: <code class="type">(string * int) list</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">t</code> represents the entire state of the game. It contains the name of the
+    player, the player's board, the enemy's board, and the list of available
+    ships.</p>
+</div>
+</div>
+
+
+<pre><span id="EXCEPTIONInvalidPlacement"><span class="keyword">exception</span> InvalidPlacement</span></pre>
+
+<pre><span id="EXCEPTIONInvalidAttackPos"><span class="keyword">exception</span> InvalidAttackPos</span></pre>
+
+<pre><span id="EXCEPTIONInvalidShipName"><span class="keyword">exception</span> InvalidShipName</span></pre>
+
+<pre><span id="EXCEPTIONInvalidOrientation"><span class="keyword">exception</span> InvalidOrientation</span></pre>
+
+<pre><span id="VALempty_board"><span class="keyword">val</span> empty_board</span> : <code class="type">unit -> <a href="State.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">empty_board</code> takes in a unit and returns a completely empty board.</p>
+</div>
+</div>
+
+<pre><span id="VALlength_of_ship"><span class="keyword">val</span> length_of_ship</span> : <code class="type">string -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">length_of_ship</code> takes in the name of a ship and returns its length. Raises
+    InvalidShipName if the name of the ship does not exist.</p>
+</div>
+</div>
+
+<pre><span id="VALfst"><span class="keyword">val</span> fst</span> : <code class="type">'a * 'b -> 'a</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">fst</code> takes in a tuple and returns the first element.</p>
+</div>
+</div>
+
+<pre><span id="VALsnd"><span class="keyword">val</span> snd</span> : <code class="type">'a * 'b -> 'b</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">snd</code> takes in a tuple and returns the second element.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_pos"><span class="keyword">val</span> next_pos</span> : <code class="type"><a href="State.html#TYPEposition">position</a> -> string -> <a href="State.html#TYPEposition">position</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_pos</code> takes in a valid position and an orientation and returns the
+    next location. Given an invalid orientation (i.e. not H or V), it raises
+    the exception InvalidOrientation.</p>
+</div>
+</div>
+
+<pre><span id="VALin_bounds"><span class="keyword">val</span> in_bounds</span> : <code class="type"><a href="State.html#TYPEposition">position</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">in_bounds</code> takes in a position. If the position is on the grid, it returns
+    true. Otherwise, it returns false.</p>
+</div>
+</div>
+
+<pre><span id="VALpos_in"><span class="keyword">val</span> pos_in</span> : <code class="type">'a -> (string * 'a list) list -> bool * string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pos_in</code> is a helper function for <code class="code">valid_place</code> that takes in a position
+    and a list of ship positions. It returns a tuple with the first entry being
+    a boolean that is true, if there is a ship at that position, and false
+    otherwise. The second entry is the name of the ship.</p>
+</div>
+</div>
+
+<pre><span id="VALvalid_place"><span class="keyword">val</span> valid_place</span> : <code class="type"><a href="State.html#TYPEboard">board</a> -> string -> string -> <a href="State.html#TYPEposition">position</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">valid_place</code> is a helper function for <code class="code">place_ship</code> that takes in a board,
+    a ship name, an orientation, and a starting position and returns true if
+    the entire ship can be placed on the grid without overlapping and false
+    otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALplace_ship"><span class="keyword">val</span> place_ship</span> : <code class="type"><a href="State.html#TYPEboard">board</a> -> string -> string -> <a href="State.html#TYPEposition">position</a> -> <a href="State.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">place_ship</code> takes in a board, a ship name, an orientation, and a starting
+    position then returns a new board with the ship placed on it. Raises
+    InvalidPlacement if the ship cannot be placed on the board.</p>
+</div>
+</div>
+
+<pre><span id="VALhelper"><span class="keyword">val</span> helper</span> : <code class="type">string -> <a href="State.html#TYPEposition">position</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">helper</code> takes in a string representing a position and turns it into a
+    position. Raises InvalidPlacement if the position is incorrect.</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_place"><span class="keyword">val</span> player_place</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> string -> string -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_place</code> takes in a state, a ship, an orientation, and a starting
+    orientation. Returns a new state with the ship placed on the player's board.
+    Raises InvalidShipName if the name of the ship does not exist.</p>
+</div>
+</div>
+
+<pre><span id="VALremaining"><span class="keyword">val</span> remaining</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">remaining</code> takes in a state and returns however many ships still need to
+    be placed. If there are two or more ships left, it simply returns 2.</p>
+</div>
+</div>
+
+<pre><span id="VALrand_pos"><span class="keyword">val</span> rand_pos</span> : <code class="type">unit -> <a href="State.html#TYPEposition">position</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">rand_pos</code> generates a random position.</p>
+</div>
+</div>
+
+<pre><span id="VALrandom_board"><span class="keyword">val</span> random_board</span> : <code class="type">unit -> <a href="State.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">random_board</code> generates a random board with random ship placements.</p>
+</div>
+</div>
+
+<pre><span id="VALinit_state"><span class="keyword">val</span> init_state</span> : <code class="type">string -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init_state</code> takes in a str and creates an initial state with the string
+    as the player's name, an empty player board, a random enemy board, and all
+    the ships being available.</p>
+</div>
+</div>
+
+<pre><span id="VALremove"><span class="keyword">val</span> remove</span> : <code class="type">'a -> ('a * 'b) list -> ('a * 'b) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">remove</code> takes in a ship and list of ship positions and removes it from the
+    list.</p>
+</div>
+</div>
+
+<pre><span id="VALadd_hit"><span class="keyword">val</span> add_hit</span> : <code class="type">'a -> 'b -> ('b * 'a list) list -> ('b * 'a list) list -> ('b * 'a list) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">add_hit</code> takes in a position, the name of the ship, the list of hits, and
+    an accumulator, then adds the new hit to the list of hits. Fails if the
+    hit list is invalid (does not contain all the ships).</p>
+</div>
+</div>
+
+<pre><span id="VALnot_attacked"><span class="keyword">val</span> not_attacked</span> : <code class="type">'a -> 'a list -> ('b * 'a list) list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">not_attacked</code> takes in a position, the list of misses, and the list of
+    hits. It returns true if the position has not been attacked and false
+    otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALsunk_ship"><span class="keyword">val</span> sunk_ship</span> : <code class="type">string -> (string * 'a list) list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">sunk_ship</code> takes in the name of a ship and a list of all the hits. Returns
+    true if the given ship is sunken and false otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALget_sunken_ship"><span class="keyword">val</span> get_sunken_ship</span> : <code class="type">(string * 'a list) list -> (string * 'b) list -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_sunken_ship</code> takes in a list of all the hits and a list of ships that
+    have not sunk yet. It returns an empty string if none of the ships in that
+    list have sunk, otherwise it returns the name of the ship that was sunk.</p>
+</div>
+</div>
+
+<pre><span id="VALattack"><span class="keyword">val</span> attack</span> : <code class="type">'a -> <a href="State.html#TYPEboard">board</a> -> <a href="State.html#TYPEposition">position</a> -> <a href="State.html#TYPEboard">board</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">attack</code> takes in a state, a board, and the position being attacked.
+    Returns a new board which either adds to the misses, the hits, or removes a
+    ship from the list of not sunken ships. Returns InvalidAttackPos if the
+    position is not on the grid or has already been attacked.</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_attack"><span class="keyword">val</span> player_attack</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_attack</code> takes in a state and a pos and returns a new state that has
+    called <code class="code">attack</code> on the enemy's board.</p>
+</div>
+</div>
+
+<pre><span id="VALai_attack"><span class="keyword">val</span> ai_attack</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ai_attack</code> takes in a state and a pos and returns a new state that has
+    called <code class="code">attack</code> on the player's board.</p>
+</div>
+</div>
+
+<pre><span id="VALsearch_hits"><span class="keyword">val</span> search_hits</span> : <code class="type">('a * 'b list) list -> 'b -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">search_hits</code> takes in a list of hits and a pos. Returns true if the pos is
+    a hit and false otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALreturn_sign"><span class="keyword">val</span> return_sign</span> : <code class="type"><a href="State.html#TYPEboard">board</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">return_sign</code> takes in a board and a string representing a position. Returns
+    a string associated with the position. O for a miss, X for a hit, and + if
+    the location has not been attacked.</p>
+</div>
+</div>
+
+<pre><span id="VALreturn_ship_grid"><span class="keyword">val</span> return_ship_grid</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">return_ship_grid</code> takes in a state and a string representing a position.
+    Returns a string associated with the position. - if a ship is placed there
+    and + if a ship is not.</p>
+</div>
+</div>
+
+<pre><span id="VALget_status"><span class="keyword">val</span> get_status</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_status</code> takes in a state and calls <code class="code">get_sunken_ship</code>. Returns an empty
+    string if no ship has just been sunk, otherwise returns the name of the ship
+    that was sunk.</p>
+</div>
+</div>
+
+<pre><span id="VALget_player_sign"><span class="keyword">val</span> get_player_sign</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_player_sign</code> takes in a state and a string representing a position.
+    Calls <code class="code">return_sign</code> and returns a string associated with the position on
+    the player's board.</p>
+</div>
+</div>
+
+<pre><span id="VALget_enemy_sign"><span class="keyword">val</span> get_enemy_sign</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_enemy_sign</code> takes in a state and a string representing a position.
+    Calls <code class="code">return_sign</code> and returns a string associated with the position on
+    the enemy's board.</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_win"><span class="keyword">val</span> player_win</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_win</code> takes in a state and returns true if the player has won and
+    false otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALai_win"><span class="keyword">val</span> ai_win</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ai_win</code> takes in a state and returns true if the AI has won and false
+    otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALget_name"><span class="keyword">val</span> get_name</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_name</code> takes in a state and returns the name of the player.</p>
+</div>
+</div>
+</body></html>

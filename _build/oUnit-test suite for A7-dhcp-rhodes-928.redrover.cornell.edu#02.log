@@ -1,0 +1,54 @@
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:1:test parse 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:1:test parse 2 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:1:test parse 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:3:test parse 4.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:3:test parse 4 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:3:test parse 4.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:5:test parse 6.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:5:test parse 6 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:5:test parse 6.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:7:test parse 8.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:7:test parse 8 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:7:test parse 8.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:9:test parse 10.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:9:test parse 10 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:9:test parse 10.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:11:test player name.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:11:test player name is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:11:test player name.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:14:test remaining 1.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:14:test remaining 1 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:14:test remaining 1.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:15:test get_enemy_hits 1.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:15:test get_enemy_hits 1 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:15:test get_enemy_hits 1.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:17:test player win 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:17:test player win 2 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:17:test player win 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:19:test remaining 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:19:test remaining 3 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:19:test remaining 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:21:test remaining 5.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:21:test remaining 5 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:21:test remaining 5.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:23:test ai win 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:23:test ai win 3 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:23:test ai win 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:25:test get_enemy_hits 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:25:test get_enemy_hits 3 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:25:test get_enemy_hits 3.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:27:test in_bounds 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:27:test in_bounds 2 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:27:test in_bounds 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:29:test length of ship 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:29:test length of ship 2 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:29:test length of ship 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:31:test length of ship 4.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:31:test length of ship 4 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:31:test length of ship 4.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:33:test length of ship 6.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:33:test length of ship 6 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:33:test length of ship 6.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Start test test suite for A7:35:test get level 2.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: Test test suite for A7:35:test get level 2 is successful.
+2019-04-24T20:52:06+00:00 dhcp-rhodes-928.redrover.cornell.edu#02 I: End test test suite for A7:35:test get level 2.
